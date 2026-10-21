@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANJING GILA 444 — Lemonade</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+        body {color: #fff; line-height: 1.6;}
+
+        .bg-layer {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;
+            background: linear-gradient(145deg, #1a1200 0%, #2b1d00 50%, #120d00 100%);
+        }
+        .bg-pattern {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            background: radial-gradient(circle at 30% 20%, rgba(255, 200, 0, 0.12) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(255, 180, 0, 0.08) 0%, transparent 50%);
+        }
+
+        header {text-align: center; padding: 2rem 1rem;}
+        .logo {max-width: 300px; width: 80%; margin-bottom: 1rem; filter: drop-shadow(0 0 15px rgba(255, 200, 0, 0.4));}
+        .tagline {font-size: 1rem; color: #ffd040; letter-spacing: 2px;}
+
+        .container {max-width: 950px; margin: 0 auto; padding: 1rem;}
+        h2 {text-align: center; font-size: 1.5rem; color: #ffd000; margin-bottom: 2rem; letter-spacing: 3px; text-transform: uppercase;}
+
+        .produk-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;}
+        .produk-card {
+            background: rgba(255,255,255,0.05); border: 2px solid rgba(255, 200, 0, 0.3);
+            border-radius: 16px; padding: 1.5rem; text-align: center; transition: 0.3s;
+        }
+        .produk-card:hover {
+            border-color: #ffcc00; transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(255, 180, 0, 0.15);
+        }
+        .produk-img {
+            width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;
+        }
+        .produk-card h3 {font-size: 1.2rem; margin-bottom: 0.5rem; color: #ffd040;}
+        .harga {font-size: 1.4rem; font-weight: bold; color: #fff; margin-bottom: 1.2rem;}
+        .harga span {color: #ffcc00;}
+        .btn {
+            display: inline-block; background: linear-gradient(90deg, #e6b800, #ffcc00); color: #000;
+            padding: 0.7rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;
+            text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;
+        }
+        .btn:hover {background: linear-gradient(90deg, #ffcc00, #ffdd33);}
+
+        footer {text-align: center; padding: 2rem 1rem; margin-top: 3rem; border-top: 1px solid rgba(255, 200, 0, 0.25);}
+        footer p {color: #998844; font-size: 0.9rem; margin: 0.3rem 0;}
+        .kontak {color: #ffd000; font-weight: bold;}
+    </style>
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="bg-pattern"></div>
+
+<header>
+    <img src="https://i.imgur.com/9XZQ8xL.png" alt="ANJING GILA 444" class="logo">
+    <p class="tagline">LEMONADE — Kejujuran & Kualitas di Atas Segalanya</p>
+</header>
+
+<div class="container">
+    <h2>📦 Produk Kami</h2>
+    <div class="produk-grid">
+        <div class="produk-card">
+            <img src="https://i.imgur.com/AP8ZqWj.png" alt="Anjing Gila 444 Lemonade" class="produk-img">
+            <h3>1,5 R</h3>
+            <p class="harga"><span>Rp 90.000</span></p>
+            <a href="#" class="btn">Pesan</a>
+        </div>
+        <div class="produk-card">
+            <img src="https://i.imgur.com/AP8ZqWj.png" alt="Anjing Gila 444 Lemonade" class="produk-img">
+            <h3>2 R</h3>
+            <p class="harga"><span>Rp 150.000</span></p>
+            <a href="#" class="btn">Pesan</a>
+        </div>
+        <div class="produk-card">
+            <img src="https://i.imgur.com/AP8ZqWj.png" alt="Anjing Gila 444 Lemonade" class="produk-img">
+            <h3>3,2 R</h3>
+            <p class="harga"><span>Rp 200.000</span></p>
+            <a href="#" class="btn">Pesan</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p class="kontak">📞 Zangi: 2882145974</p>
+    <p>📸 Instagram: @anjing_gila444</p>
+    <p>ANJING GILA 444 — Lemonade</p>
+</footer>
+
+</body>
+</html>
